@@ -27,8 +27,8 @@
       </ul>
 
       <form class="search">
-        <input type="search" name="q" placeholder="Search query">
-        <input type="submit" value="Go!">
+        <input type="search" name="q" placeholder="Search query" aria-label="input search">
+        <input type="submit" value="Go!" aria-label="submit">
       </form>
     </nav>
 
@@ -44,17 +44,17 @@
         <table>
           <thead>
             <tr>
-              <td>Bear Type</td>
-              <td>Coat</td>
-              <td>Adult size</td>
-              <td>Habitat</td>
-              <td>Lifespan</td>
-              <td>Diet</td>
+              <th scope="col">Bear Type</th>
+              <th scope="col">Coat</th>
+              <th scope="col">Adult size</th>
+              <th scope="col">Habitat</th>
+              <th scope="col">Lifespan</th>
+              <th scope="col">Diet</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Wild</td>
+              <th scope="row">Wild</th>
               <td>Brown or black</td>
               <td>1.4 to 2.8 meters</td>
               <td>Woods and forests</td>
@@ -62,7 +62,7 @@
               <td>Fish, meat, plants</td>
             </tr>
             <tr>
-              <td>Urban</td>
+              <th scope="row">Urban</th>
               <td>North Face</td>
               <td>18 to 22</td>
               <td>Condos and coffee shops</td>
@@ -74,9 +74,9 @@
 
         <h3>Habitats and Eating habits</h3>
         <p>Wild bears eat a variety of meat, fish, fruit, nuts, and other natually growing ingredients. In general they will hunt for food themselves in woodland or rivers, but at a push they will track down their sustenance from farms or country houses. They tend to live in relative isolation, in caves, tents, or cottages.</p>
-        <img src="media/wild-bear.jpg">
+        <img src="media/wild-bear.jpg" title="wild bear" alt="wild bear">
         <p>Urban (gentrified) bears on the other hand have largely abandoned the old ways. They will hunt other urban creatures if necessary (including other predators like rats and foxes), but prefer to scavenge from readily available urban food outlets like dumpsters, bins, and fast food joints. When food has proven scarce, urban bears have even been known to break into people's kitchens and steal essentials like baked beans, ready meals, and microwave ovens.</p>
-        <img src="media/urban-bear.jpg">
+        <img src="media/urban-bear.jpg" title="bear in cage" alt="bear in cage">
         <p>Urban bears will sleep anywhere they can, from bus shelters and parks, to the toilets in McDonalds, to their own apartment.</p>
         <h3>Mating rituals</h3>
         <p>Bears are romantic creatures by nature, and will naturally look for a mate that they can spend the rest of their lives with. They will woo a potential suitor by making their dwelling look attractive — for example with cave paintings or a bed of reeds in the case of a wild bear, and mood lighting and a Michael Bublé CD in the case of an urban bear.</p>
@@ -90,7 +90,7 @@
 
         </aside>
         <section class="comments">
-          <div class="show-hide">Show comments</div>
+          <button class="show-hide">Show comments</button>
 
           <div class="comment-wrapper">
 
@@ -99,14 +99,14 @@
             <form class="comment-form">
               <div class="flex-pair">
                 Your name:
-                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <input type="text" name="name" id="name" placeholder="Enter your name" aria-label="input text">
               </div>
               <div class="flex-pair">
                 Your comment:
-                <input type="text" name="comment" id="comment" placeholder="Enter your comment">
+                <input type="text" name="comment" id="comment" placeholder="Enter your comment" aria-label="input comment">
               </div>
               <div>
-                <input type="submit" value="Submit comment">
+                <input type="submit" value="Submit comment" aria-label="Submit">
               </div>
             </form>
 
@@ -142,7 +142,7 @@
     </main>
 
     <footer>
-      <p>©Copyright 2050 by nobody. All rights reversed.</p>
+      <p>©Copyright 2020 by nobody. All rights reversed.</p>
     </footer>
 
     <script src="main.js"></script>
